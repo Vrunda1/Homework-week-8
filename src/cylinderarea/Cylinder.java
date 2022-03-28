@@ -3,6 +3,7 @@ package cylinderarea;
 public class Cylinder extends Circle {
     double height;
 
+    //constructor with argument
     public Cylinder(double radius, double height) {
         super(radius);
         if (height < 0) {
@@ -12,11 +13,13 @@ public class Cylinder extends Circle {
         }
 
     }
-    public double getHeight(){
+
+    public double getHeight() {
         return height;
     }
-    public double getVolume(){
-        return this.height*this.getArea();
+
+    public double getVolume() {
+        return this.height * this.getArea();
     }
 
 }

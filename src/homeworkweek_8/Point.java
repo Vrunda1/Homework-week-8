@@ -4,14 +4,17 @@ public class Point {
     int x;
     int y;
 
+    //constructor with no argument
     public Point() {
 
     }
 
+    //constructor with parameters
     public Point(int x, int y) {
-        this.x=x;
-        this.y=y;
+        this.x = x;
+        this.y = y;
     }
+
     public int getX() {
         return x;
 
@@ -36,6 +39,8 @@ public class Point {
     public double distance(int x, int y) {
         return Math.sqrt((x - this.x) * (x - this.x) + (y - this.y) * (y - this.y));
     }
+
+    //Instance method with return type,with parameter
     public double distance(Point another) {
         return distance(another.x, another.y);
 
@@ -51,5 +56,5 @@ public class Point {
         System.out.println("distance()= " + point.distance());
 
     }
-    }
+}
 

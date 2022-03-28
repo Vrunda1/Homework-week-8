@@ -18,7 +18,7 @@ public class Program3 {
         String s1 = s.toLowerCase(Locale.ROOT);
         char ch = s1.charAt(0);
         boolean flag = Character.isAlphabetic(ch);
-
+        //checking if character is vowel or consonent
         if (s1.length() == 1 && flag) {
             if (ch == 'a' || ch == 'e' || ch == 'i' || ch == 'o' || ch == 'u')
                 System.out.println(ch + "is a vowel");

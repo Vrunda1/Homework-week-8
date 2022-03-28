@@ -4,6 +4,7 @@ public class Rectangle {
     double width;
     double length;
 
+    //constructor with argument
     public Rectangle(double width, double length) {
         if (width < 0 && length < 0) {
             this.length = 0;

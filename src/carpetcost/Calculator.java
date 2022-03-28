@@ -1,15 +1,18 @@
 package carpetcost;
 
 public class Calculator {
-  Floor floor;
+    Floor floor;
     Carpet carpet;
 
-    public Calculator(Floor floor,Carpet carpet){
-        this.carpet=carpet;
-        this.floor=floor;
+    //construtor with parameter
+    public Calculator(Floor floor, Carpet carpet) {
+        this.carpet = carpet;
+        this.floor = floor;
     }
-    public double getTotalCost(){
-        return floor.getArea()*carpet.getCost();
+
+    public double getTotalCost() {
+        //calculate area
+        return floor.getArea() * carpet.getCost();
 
     }
 }

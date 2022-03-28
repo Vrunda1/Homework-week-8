@@ -4,7 +4,8 @@ public class Floor {
     double width;
     double length;
 
-    public  Floor(double width, double length) {
+    //constructor with argument
+    public Floor(double width, double length) {
         if (width < 0 && length > 0) {
             this.width = 0;
             this.length = length;

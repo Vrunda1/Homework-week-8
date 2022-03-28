@@ -1,7 +1,7 @@
 package methodoverriding24;
 
 public class Bank {
-    public int getRateOfInterest(){
+    public int getRateOfInterest() {
         return 0;
     }
 }

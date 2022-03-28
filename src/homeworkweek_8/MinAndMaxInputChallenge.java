@@ -16,31 +16,33 @@ public class MinAndMaxInputChallenge {
         int max = 0;
         boolean b = true;
 
-        while (true){
+        while (true) {
             int c = count++;
             System.out.println("Enter number: " + c);
             boolean isvalid = sc1.hasNextInt();
-            if (isvalid){
+            if (isvalid) {
                 int num = sc1.nextInt();
-                if(b){
+                if (b) {
                     b = false;
                     min = num;
                     max = num;
                 }
+                //checking number is min or max
                 if (num < min) {
                     min = num;
                 } else if (num > max) {
                     max = num;
-                }} else {
-                    System.out.println("Invalid number");
-                    break;
                 }
-                sc1.nextLine();
+            } else {
+                System.out.println("Invalid number");
+                break;
             }
-            System.out.println("Min number" + min);
-            System.out.println("Max number" + max);
+            sc1.nextLine();
         }
-
+        System.out.println("Min number" + min);
+        System.out.println("Max number" + max);
     }
+
+}
 
 

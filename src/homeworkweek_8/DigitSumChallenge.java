@@ -11,12 +11,13 @@ public class DigitSumChallenge {
 
     }
 
+    //static method with return type,with parameter
     public static int sumDigits(int number) {
         int sum = 0;
         if (number >= 10) {
             while (number > 0) {
-                int b = number % 10;
-                sum = b + sum;
+                int b = number % 10;//find last digit
+                sum = b + sum;//addition
                 number = number / 10;
             }
         } else {

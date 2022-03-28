@@ -12,6 +12,7 @@ public class Program7 {
 
     }
 
+    //public sttic method with data type,with parameter
     public static int sumFirstAndLast(int number) {
         int firstdigit = 0;
         int lastdigit = 0;
@@ -28,7 +29,7 @@ public class Program7 {
         } else {
             return -1;
         }
-        sum = firstdigit + lastdigit;
+        sum = firstdigit + lastdigit;//add first and last digit
         System.out.println("first  digit " + firstdigit + "and last digit " + lastdigit + "and the sum is " + sum);
 
         return sum;
